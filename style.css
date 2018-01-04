@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Akkurat;
+    src: url(Akkurat-Light.ttf);
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.output {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+}
+.text-wrapper {
+  margin-top: -40px;
+}
+.main-text {
+	font-family: 'Akkurat', serif;
+	font-size: 36px;
+  color: #000;
+	/*margin: 30px auto;*/
+}
+.second-text {
+  font-family: 'Akkurat', serif;
+  font-size: 16px;
+  color: #000;
+  /*margin: 10px auto;*/
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo svg {
+  display:block;
+}
+
+.st1 {
+  fill: #b32942;
+  stroke: #b32942;
+  stroke-width:1px;
+  animation: draw 14s ease forwards, colour 2s 2s forwards;
+  stroke-dasharray: 1230;
+  stroke-dashoffset: 1230;
+}
+
+.st2 {
+  fill: #f48221;
+  stroke: #f48221;
+  stroke-width:1px;
+  animation: draw 14s ease forwards, colour 2s 2s forwards;
+  stroke-dasharray: 1230;
+  stroke-dashoffset: 1230;
+}
+
+@keyframes draw {  
+  0% {
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+    stroke-dashoffset: 0;
+    stroke-opacity: 50%;
+  }
+  100% {
+    fill:transparent;
+    stroke-opacity: 0%;
+    stroke-dashoffset: 0;
+  }  
+}
+
+@keyframes colour {  
+  0% {
+    fill:transparent;
+  }
+  100% {
+    fill:100%;
+  }  
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+body {
+  background-image: url('background.png');
+  background-position: 0px 0px;
+  background-size: 70% auto;
+  animation: animatedBackground 100s infinite alternate;
+}

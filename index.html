@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TelstraDev in 2 mins</title>
+</head>
+<body>
+	<link rel="stylesheet" href="style.css">
+	<div class="content">
+	<div class="logo">
+		<svg version="1.1"
+			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" width="150px">
+		<defs>
+		</defs>
+		<g>
+			<g>
+			<path class="st1" d="M101.7,0.1c3.5-0.2,7-0.1,10.5-0.1c4.2,0,8.4,0,12.6,0c-1.2,6.5-2.4,13.1-3.6,19.6c-0.5,2.4-2,4.8-4.2,6
+				c-1.6,0.9-3.6,1.1-5.4,1c-7.3,0-14.5,0-21.8,0c-2.1,12-4.1,24.1-6.2,36.1c-1.7,9.9-3.4,19.7-5,29.6c-0.4,1.9-0.5,3.9-1.3,5.7
+				c-0.8,1.7-2.1,3.3-3.8,4c-1.6,0.7-3.4,0.9-5.1,0.8c-8.7,0-17.4,0-26.1,0c4-19.9,8.1-39.9,12.1-59.8c1.1-5.5,2.2-10.9,3.3-16.4
+				c-10.7,0-21.5,0-32.2,0c1.3-6.5,2.5-13,3.8-19.5c0.5-2.1,1.6-4,3.3-5.3c1.6-1.1,3.5-1.7,5.5-1.6c7.7,0,15.4,0,23,0
+				c7.3,0,14.6,0,21.8,0C89.2,0.1,95.4,0.1,101.7,0.1z"/>
+			<path class="st2" d="M20,35.4c1.8-0.1,3.5-0.3,5.3-0.2c10.1,0.4,20,3.5,29,7.9c-4.1,19.9-8.1,39.9-12.1,59.8c8.7,0,17.4,0,26.1,0
+				c1.7,0.1,3.5-0.1,5.1-0.8c1.7-0.8,3.1-2.3,3.8-4c0.8-1.8,1-3.8,1.3-5.7c1.7-9.9,3.4-19.7,5-29.6c11.3,10.1,21.5,21.7,28.4,35.3
+				c2.3,4.5,4.2,9.2,5.4,14.1c0.9,3.8,1.4,7.8,1,11.7c-0.4,3.7-1.6,7.3-3.7,10.4c-1,1.7-2.7,2.9-4.2,4c-5.4,3.8-12.2,5-18.6,4.5
+				c-6.7-0.5-13.2-2.5-19.5-4.8c-15-5.6-28.8-14.5-40.5-25.4C21.4,103.1,12.2,92,6,79.3C3.2,73.3,0.8,67,0.2,60.4
+				c-0.3-3.1-0.2-6.2,0.5-9.2c0.9-3.6,2.6-7.1,5.3-9.6C9.7,37.9,14.9,35.9,20,35.4z"/>
+			</g>
+		</g>
+		</svg>
+	</div>
+    <div class="output">
+      <div class="text-wrapper">
+        <div class="main-text">
+        </div>
+        <div class="second-text">
+        </div>
+      </div>
+    </div>
+	</div>
+	<script src="tinytyper.min.js"></script>
+	<script>
+		var el       = document.querySelector('.main-text')
+		var options  = {
+		  text: '   TelstraDev\n            In 2 mins',
+	      textSpeed: 65,
+	      blinkSpeed: 0.06
+		}
+
+		var instance = new tinytyper(el, options);
+
+		window.setTimeout(function () {
+			document.getElementsByClassName('tiny-typer-cursor')[0].style.visibility = 'hidden';
+
+			var el2       = document.querySelector('.second-text')
+			var options2  = {
+			  text: 'ep 0.1',
+		      textSpeed: 120,
+		      blinkSpeed: 0.06
+			}
+
+			var instance2 = new tinytyper(el2, options2);
+		},3500);
+	</script>
+</body>
+</html>
